@@ -1,62 +1,41 @@
-# Projetos Acadêmicos | Ciência de Dados
+# Atividades de Sala
+> Orientações para execução das atividades de sala.
 
-Repositório dedicado à organização e documentação das atividades práticas, exercícios e avaliações desenvolvidos durante minha graduação em **Ciência de Dados pela Universidade Federal do Ceará (UFC)**.
+Esse documento exibe as descrições das questões a serem resolvidas em sala
 
-O projeto reúne conteúdos relacionados a diferentes áreas da computação e da Ciência de Dados, organizados por unidades de estudo e atividades avaliativas.
+##  Unidade 1
 
-## Conteúdo do repositório
+### Questão 1
 
-### 01. Aprendizado Não Supervisionado — Clustering
+[1_dendrogram.py](1_dendrogram.py)
 
-Atividades relacionadas ao estudo de técnicas de agrupamento (*clustering*), com foco na exploração de dados e identificação de grupos e padrões.
+#### Dendrograma
 
-### 02. Processamento de Linguagem Natural (NLP)
+Nesta questão você visualizar o conjunto de dados via dendrograma
 
-Atividades relacionadas ao Processamento de Linguagem Natural (*Natural Language Processing*), área voltada ao processamento e à análise de dados textuais e linguísticos.
+#### Instruções:
 
-### 03. Processamento Digital de Imagens (PDI)
+1)  Utilize a função linkagem para criar a matriz de distâncias com as colunas 'x_scaled' e 'y_scaled' do dataframe df. Utilize o método ward e distancia euclidiana.
+   
+2)  Chame e função ``dendrogram`` . Passe a matriz de distâncias como argumento 
 
-Atividades relacionadas ao Processamento Digital de Imagens, envolvendo conceitos e técnicas de manipulação e análise de imagens digitais.
+3)  Mostre o dendrograma dos pontos com o método `` show`` da matplotlib .
 
-### 04. Avaliação 01
+### Questão 2
 
-Repositório dos exercícios, códigos e atividades desenvolvidos para a primeira avaliação da disciplina.
+[2_elbow_method.py](2_elbow_method.py)
 
-### 05. Avaliação 02
+#### Enontrar a quantidad de clusters para o kmedias
 
-Repositório dos exercícios, códigos e atividades desenvolvidos para a segunda avaliação da disciplina.
+Nesta questão você vai verificar limitações do kmedias.
 
-## Organização dos arquivos
+#### Instruções 
 
-```text
-projeto-da-disciplina/
-│
-├── README.md
-├── 01-aprendizado-nao-supervisionado-clustering/
-├── 02-processamento-de-linguagem-natural/
-├── 03-processamento-digital-de-imagens/
-├── 04-avaliacao-01/
-├── 05-avaliacao-02/
-└── codigo-fonte/
-```
+1) Importe o módulo ``kmeans `` da scipy
+2) itere sobre a quantidade de clusters e instancie o kmedias para cada itereção alterando o valor de k. Use as colunas ``x_scaled`` e ``y_scaled`` do dataframe ``comic_con``.
+3) Empilhe na lista distortions os valores das somas dos erros (distortion)
+4) crie um dataframe que armazene os valores de distortion para cada k.
+5) Utilizando o módulo ``seaborn`` realize um ``lineplot``. Defina os arguentos ``x`` = num_cluster, ``y``= distortion  e ``hue`` = cluster_labels e ``data`` = elbow_plot.
 
-## Objetivos de aprendizagem
 
-Este repositório tem como objetivo documentar minha trajetória acadêmica e reunir aplicações práticas dos conteúdos estudados, permitindo acompanhar a organização dos exercícios, implementações e avaliações desenvolvidas ao longo da disciplina.
 
-## Contexto acadêmico
-
-Material desenvolvido durante a graduação em **Ciência de Dados pela Universidade Federal do Ceará (UFC)**.
-
-## Autora
-
-**Eryka Carvalho**
-
-Graduada em Ciência de Dados | Mestranda em Estatística
-
-- GitHub: [@Erykash](https://github.com/Erykash)
-- LinkedIn: [Eryka Carvalho](https://www.linkedin.com/in/Eryka-Carvalho/)
-
----
-
-*Repositório acadêmico destinado à documentação de estudos, exercícios e aplicações práticas em Ciência de Dados.*
