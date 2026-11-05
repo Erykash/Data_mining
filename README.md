@@ -22,9 +22,6 @@ Atividades relacionadas ao Processamento Digital de Imagens, envolvendo conceito
 
 Repositório dos exercícios, códigos e atividades desenvolvidos para a primeira avaliação da disciplina.
 
-### 05. Avaliação 02
-
-Repositório dos exercícios, códigos e atividades desenvolvidos para a segunda avaliação da disciplina.
 
 ## Organização dos arquivos
 
@@ -35,8 +32,7 @@ projeto-da-disciplina/
 ├── 01-aprendizado-nao-supervisionado-clustering/
 ├── 02-processamento-de-linguagem-natural/
 ├── 03-processamento-digital-de-imagens/
-├── 04-avaliacao-01/
-├── 05-avaliacao-02/
+├── 04-avaliacao-01
 └── codigo-fonte/
 ```
 
